@@ -8,7 +8,7 @@
   box-sizing: border-box;
 }
 
-.head {
+.main .head {
   padding: 15px 0px;
   border-radius: 10px;
   background-color: #8828a9;
@@ -18,25 +18,25 @@
   box-shadow: 4px 3px whitesmoke;
 }
 
-.headTop {
+.main .headTop {
   display: flex;
   justify-content: center;
   align-items: stretch;
   margin-bottom: 10px;
 }
 
-.statement {
+.main .statement {
   text-align: center;
 }
 
-.avatar {
+.main .avatar {
   min-width: 100px;
   min-height: 100px;
   border: 3px solid black;
   box-shadow: 4px -2px black;
 }
 
-.info {
+.main .info {
   display: flex;
   flex-direction: column;
   align-items: stretch;
@@ -46,7 +46,7 @@
   border-left: 2px solid whitesmoke;
 }
 
-.body {
+.main .body {
   margin-top: 10px;
   flex-grow: 1;
   display: flex;
@@ -55,7 +55,7 @@
   justify-content: space-between;
 }
 
-.mainContent {
+.main .mainContent {
   width: 75%;
   min-height: 100%;
   background-color: whitesmoke;
@@ -64,7 +64,7 @@
   box-shadow: 4px 3px whitesmoke;
 }
 
-.summary {
+.main .summary {
   padding: 0px 10px;
   margin: 10px 10px;
   color:#8828a9;
@@ -75,7 +75,7 @@
   order: 2;
 }
 
-.instruction {
+.main .instruction {
   background-color: palegoldenrod;
   color: black;
   border-top: 1px solid goldenrod;
@@ -87,7 +87,7 @@
   font-weight: 900;
 }
 
-.divider {
+.main .divider {
   margin: 0px 10px;
 }
 
@@ -95,7 +95,7 @@
   border-color: #8828a9;
 }
 
-.dividerChip {
+.main .dividerChip {
   background-color: whitesmoke;
   color: #8828a9;
   font-weight: 500;
@@ -103,40 +103,40 @@
   font-style: italic;
 }
 
-.skillsSection {
+.main .skillsSection {
   display: flex;
   flex-grow: 1;
   flex-direction: column;
 }
 
-.skills {
+.main .skills {
   flex-direction: row;
   order: 1
 }
 
-.skill {
+.main .skill {
   font-size: 18px;
   margin: 10px;
   border: 1px solid whitesmoke;
 }
 
-.skill:hover {
+.main .skills .skill:hover {
   cursor: pointer;
   border: 1px solid white;
 }
 
-.active, .active:hover {
+.skills .active, .skills .active:hover {
   background-color: #8828a9;
   border: 1px solid white;
   color: white;
   box-shadow: 3px 4px grey;
 }
 
-.inactive:hover {
+.main .inactive:hover {
   background-color:aquamarine;
 }
 
-.clientHeader {
+.main .clientHeader {
   background-color: #8828a9;
   color: whitesmoke;
   padding: 10px 5px;
@@ -146,7 +146,7 @@
   text-align: center;
 }
 
-.clientList {
+.main .clientList {
   flex-grow: 1;
   display: flex;
   flex-direction: column;
@@ -154,14 +154,14 @@
   align-items: center;
 }
 
-.clientName {
+.main .clientName {
   text-align: center;
   color: #8828a9;
   font-size: 28px;
   padding: 10px;
 }
 
-.activeClientName {
+.main .activeClientName {
   text-align: center;
   color: whitesmoke;
   font-size: 28px;
@@ -172,7 +172,7 @@
   box-shadow: 3px 4px grey;
 }
 
-.sideContent {
+.main .sideContent {
   width: 23%;
   min-height: 100%;
   background-color: whitesmoke;
@@ -223,58 +223,58 @@
     padding: 2rem;
   }
 
-  .headTop {
+  .main .headTop {
     padding: 1.5rem;
     font-size: unset;
     align-items: stretch;
   }
 
-  .info {
+  .main .info {
     font-size: unset;
     align-items: stretch;
     font-size: 18px;
   }
 
-  .statement {
+  .main .statement {
     text-align: center;
     font-weight: bold;
     font-size: 12px;
   }
 
-  .body {
+  .main .body {
     flex-direction: column;
   }
 
-  .mainContent {
+  .main .mainContent {
     order: 2;
     width: 100%;
     margin-top: 20px;
   }
 
-  .sideContent {
+  .main .sideContent {
     order: 1;
     width: 100%;
     margin-top: 10px;
   }
 
-  .clientList {
+  .main .clientList {
     flex-direction: row;
     flex-flow: wrap;
     margin: 5px 0px;
   }
 
-  .clientName, .activeClientName {
+  .main .clientName, .main .activeClientName {
     width: 33%;
     padding: 10px 10px;
     font-size: 24px;
     margin: 0px 5px 5px 5px;
   }
 
-  .skills {
+  .main .skills {
     order: 2;
   }
 
-  .summary {
+  .main .summary {
     order: 1;
   }
 }
@@ -289,23 +289,23 @@
     padding: 2rem;
   }
 
-  .headTop {
+  .main .headTop {
     padding: 1.5rem;
     font-size: unset;
     align-items: stretch;
   }
 
-  .info {
+  .main .info {
     font-size: unset;
     align-items: stretch;
     font-size: 18px;
   }
 
-  .skills {
+  .main .skills {
     order: 1;
   }
 
-  .summary {
+  .main .summary {
     order: 2;
   }
 }

@@ -11,7 +11,7 @@ import { useEffect, useState } from 'react';
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
-  const [isMobile, setIsMobile] = useState(true);
+  const [isMobile, setIsMobile] = useState((typeof window !== 'undefined' && window.innerWidth < 700));
 
   useEffect(() => {
     if (typeof window !== 'undefined') {
@@ -201,7 +201,7 @@ export default function Home() {
         <div className={styles.body}>
           <div className={styles.mainContent}>
             <p className={styles.summary}>
-              I have worked in a plethora of software engineering roles throughout my career (tech lead, senior full stack engineer, test-automation engineer).
+              I have worked in a plethora of software engineering roles throughout my career (tech lead, senior full stack engineer, test-automation engineer, et cetera).
               As a consultant, I always find myself assimilating into a new project, team, industry, or tech stack.
               I always enjoy seeing what bits of knowledge, methodologies, and practices I can swap with my fellow experts.
             </p>
