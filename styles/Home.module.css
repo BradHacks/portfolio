@@ -4,14 +4,14 @@
   align-items: center;
   padding: 6rem;
   min-height: 100vh;
-  background-color: black;
+  background-image: url('/cushion.webp');
   box-sizing: border-box;
 }
 
 .main .head {
   padding: 15px 0px;
   border-radius: 10px;
-  background-color: #8828a9;
+  background-image: url('/squares.webp');
   width: 100%;
   color: whitesmoke;
   font-size: 24px;
@@ -27,6 +27,7 @@
 
 .main .statement {
   text-align: center;
+  
 }
 
 .main .avatar {
@@ -137,7 +138,7 @@
 }
 
 .main .clientHeader {
-  background-color: #8828a9;
+  background-image: url('/squares.webp');
   color: whitesmoke;
   padding: 10px 5px;
   font-style: italic;
