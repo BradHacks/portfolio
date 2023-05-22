@@ -4,46 +4,70 @@
   align-items: center;
   padding: 6rem;
   min-height: 100vh;
-  background-image: url('/cushion.webp');
+  background-image: url(/dystopianWorld.jpg);
+  /* background-repeat: no-repeat; */
+  background-position-x: center;
+  background-size: cover;
   box-sizing: border-box;
 }
 
 .main .head {
   padding: 15px 0px;
   border-radius: 10px;
-  background-image: url('/squares.webp');
   width: 100%;
   color: whitesmoke;
   font-size: 24px;
-  box-shadow: 4px 3px whitesmoke;
+  /* box-shadow: 4px 3px whitesmoke; */
 }
 
 .main .headTop {
   display: flex;
-  justify-content: center;
-  align-items: stretch;
   margin-bottom: 10px;
+  justify-content: flex-start;
+  flex-direction: row;
 }
 
-.main .statement {
+.main .headTop > div {
+  background-image: url(/squares.webp);
+  flex-direction: row;
+  display: flex;
+  margin: 10px;
+  padding-left: 10px;
+  border-radius: 10px;
+  border: 1px solid white;
+  box-shadow: 3px 4px rgb(66,66,66, 1.0);
+}
+
+.main .headTop > div > div {
+  margin: 10px;
+}
+
+.main .head .statement {
   text-align: center;
-  
+  font-size: 32px;
+  margin: 40px 10px 10px 20px;
+  color: #8828a9;
+  /* background-image: url(/squares.webp); */
 }
 
-.main .avatar {
-  min-width: 100px;
-  min-height: 100px;
-  border: 3px solid black;
-  box-shadow: 4px -2px black;
+.main .headTop .avatar {
+  min-width: 75px;
+  min-height: 75px;
+  /* min-width: 100px;
+  min-height: 100px; */
+  border: 1px solid black;
+  /* box-shadow: 2px -1px rgb(66,66,66, 1.0); */
+  border-radius: 10px;
+  border-radius: 50%;
 }
 
-.main .info {
+.main .headTop .info {
   display: flex;
   flex-direction: column;
   align-items: stretch;
   justify-content: space-evenly;
   padding: 0px 20px;
-  margin-left: 20px;
+  margin-left: 10px;
   border-left: 2px solid whitesmoke;
 }
 
@@ -54,15 +78,18 @@
   flex-direction: row;
   width: 100%;
   justify-content: space-between;
+  margin-left: 20px;
 }
 
 .main .mainContent {
   width: 75%;
   min-height: 100%;
-  background-color: whitesmoke;
-  border: 1px solid #8828a9;
+  /* background-color: whitesmoke; */
+  /* border: 1px solid #8828a9; */
   border-radius: 10px;
-  box-shadow: 4px 3px whitesmoke;
+  /* box-shadow: 4px 3px whitesmoke; */
+  background-color: rgb(255,255,255, 0.85);
+  border: 1px solid black;
 }
 
 .main .summary {
@@ -78,13 +105,17 @@
 
 .main .instruction {
   background-color: palegoldenrod;
-  color: black;
+  color: rgb(0,0,0, 0.6);
   border-top: 1px solid goldenrod;
   border-bottom: 1px solid goldenrod;
+  text-align: center;
+  order: 2;
+  margin: 10px 10px;
+  font-size: 20px;
+  font-weight: 600;
 }
 
 .summary b {
-  text-decoration: underline;
   font-weight: 900;
 }
 
@@ -93,11 +124,11 @@
 }
 
 .divider::before, .divider::after {
-  border-color: #8828a9;
+  border-color: #7a218f;
 }
 
 .main .dividerChip {
-  background-color: whitesmoke;
+  background-color: unset;
   color: #8828a9;
   font-weight: 500;
   font-size: 20px;
@@ -118,27 +149,28 @@
 .main .skill {
   font-size: 18px;
   margin: 10px;
-  border: 1px solid whitesmoke;
+  border: 1px solid black;
+  background-color: rgb(0,0,0, 0.15);
 }
 
 .main .skills .skill:hover {
   cursor: pointer;
-  border: 1px solid white;
+  border: 2px solid black;
 }
 
-.skills .active, .skills .active:hover {
-  background-color: #8828a9;
+.skills .active {
+  background-image: url(/squares.webp);
   border: 1px solid white;
   color: white;
   box-shadow: 3px 4px grey;
 }
 
 .main .inactive:hover {
-  background-color:aquamarine;
+  background-color: lightsteelblue;
 }
 
 .main .clientHeader {
-  background-image: url('/squares.webp');
+  background-image: url(/squares.webp);
   color: whitesmoke;
   padding: 10px 5px;
   font-style: italic;
@@ -166,8 +198,9 @@
   text-align: center;
   color: whitesmoke;
   font-size: 28px;
-  background-color: #8828a9;
+  background-image: url(/squares.webp);
   padding: 10px;
+  margin: 10px;
   border-radius: 10px;
   border: 1px solid white;
   box-shadow: 3px 4px grey;
@@ -177,12 +210,26 @@
   width: 23%;
   min-height: 100%;
   background-color: whitesmoke;
-  border: 1px solid #8828a9;
+  border: 2px solid white;
   border-radius: 10px;
-  box-shadow: 4px 3px whitesmoke;
+  box-shadow: 3px 4px rgb(66,66,66, 1.0);
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+}
+
+.main .tagLine {
+  color: whitesmoke;
+  font-size:32px;
+  background-image: url(/cushion.webp);
+  width: 100%;
+  margin: 40px 0px 0px 20px;
+  bottom: 0;
+  border-radius: 15px;
+  text-align: center;
+  padding: 10px 0px;
+  box-shadow: 3px 4px rgb(66,66,66, 1.0);
+  border: 1px solid black;
 }
 
 /* Enable hover only on non-touch devices */
@@ -222,10 +269,11 @@
 
   .main {
     padding: 2rem;
+    background-size: 100%;
   }
 
   .main .headTop {
-    padding: 1.5rem;
+    /* padding: 1.5rem; */
     font-size: unset;
     align-items: stretch;
   }
@@ -278,6 +326,10 @@
   .main .summary {
     order: 1;
   }
+
+  .main .instruction {
+    order: 1;
+  }
 }
 
 /* Tablet and Smaller Desktop */
@@ -288,10 +340,11 @@
 
   .main {
     padding: 2rem;
+    background-size: 100%;
   }
 
   .main .headTop {
-    padding: 1.5rem;
+    /* padding: 1.5rem; */
     font-size: unset;
     align-items: stretch;
   }
@@ -307,6 +360,10 @@
   }
 
   .main .summary {
+    order: 2;
+  }
+
+  .main .instruction {
     order: 2;
   }
 }

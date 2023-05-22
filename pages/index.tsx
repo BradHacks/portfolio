@@ -192,20 +192,21 @@ export default function Home() {
       <main className={styles.main}>
         <div className={styles.head}>
           <div className={styles.headTop}>
-            <Avatar className={styles.avatar} alt="Brad Maynard" src="profile.jpg" />
-            <div className={styles.info}>
-              <p>Bradley Maynard</p>
-              <p>Senior Software Engineer</p>
+            <div>
+              <Avatar className={styles.avatar} alt="Brad Maynard" src="profile.jpg" />
+              <div className={styles.info}>
+                <p>Bradley Maynard</p>
+                <p>Senior Software Engineer</p>
+              </div>
             </div>
           </div>
-          <p className={styles.statement}><b>A</b>lleviate ambiguity ~ <b>C</b>ode competently ~ <b>T</b>est thoroughly</p>
+          {/* <p className={styles.statement}><b>A</b>lleviate ambiguity ~ <b>C</b>ode competently ~ <b>T</b>est thoroughly</p> */}
         </div>
         <div className={styles.body}>
           <div className={styles.mainContent}>
             <p className={styles.summary}>
               I have worked in a plethora of software engineering roles throughout my career (tech lead, senior full stack engineer, test-automation engineer, et cetera).
-              As a consultant, I always find myself assimilating into a new project, team, industry, or tech stack.
-              I always enjoy seeing what bits of knowledge, methodologies, and practices I can swap with my fellow experts.
+              As a consultant, I always find myself delving into new projects, teams, industries, and technologies.
             </p>
 
             <Divider className={styles.divider}>
@@ -220,8 +221,8 @@ export default function Home() {
               {/* Add a more button with a brief description of why all skills aren't listed */}
               <p className={styles.summary}>
                 {activeSkillIndex >= 0 && MetaData[activeSkillIndex].description}
-                {activeSkillIndex < 0 && <span className={styles.instruction}>{USER_INSTRUCTION_SKILLS_SECTION}</span>}
               </p>
+              {activeSkillIndex < 0 && <p className={styles.instruction}>{USER_INSTRUCTION_SKILLS_SECTION}</p>}
             </div>
             <Divider className={styles.divider}>
               <Chip className={styles.dividerChip} label="EDUCATION"/>
@@ -242,6 +243,7 @@ export default function Home() {
             </div>
           </div>
         </div>
+        <p className={styles.tagLine}><b>A</b>lleviate ambiguity ~ <b>C</b>ode competently ~ <b>T</b>est thoroughly</p>
       </main>
     </>
   )
